@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/qr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgQrcodeLogo"
+        />
+    <TextView
+        android:id="@+id/txtIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgQrcodeLogo"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Welcome To QRCode Scanner And Generator App"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btGenerateQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textAllCaps="false"
+        android:text="Generate QR Code"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/txtIntro"
+        android:layout_marginTop="10dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btScanQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textAllCaps="false"
+        android:text="Scan QR Code"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/btGenerateQR"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
